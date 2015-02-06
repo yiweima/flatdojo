@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dojo/flat.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/dgrid.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/dgrid_rtl.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/skins/skin.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/extensions/ColumnHider.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/extensions/ColumnReorder.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/extensions/ColumnResizer.css" />
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dgrid/css/extensions/Pagination.css" />
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Flat Dojo Theme</title>
+    <style>
+        .dgrid-column-0 {
+            width: 40%;
+        }
+
+        .dgrid-column-1 {
+            width: 30%;
+        }
+
+        #extendedGrid .dgrid-cell {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        #extendedGrid .dijitTextBox {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" dir="ltr">
+        <div class="inner">
+            <h1><b>Flat</b> Dojo</h1>
+            <div class="buttons">
+                <a href="https://github.com/Esri/dojo-theme-flat/zipball/master" class="button download">Download
+                </a>
+                <br />
+                <a href="https://github.com/yiweima/dojoflat.github.io" class="">View project on GitHub</a>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="../">Form</a>
+            <a href="layout.html">Layouts</a>
+            <a href="others.html">Other Dijits</a>
+            <a href="#" class="selected">dGrid</a>
+            <a href="esri.html">Esri Widgets</a>
+        </nav>
+    </header>
+
+    <div id="content-wrapper" class="loading">
+        <div class="inner clearfix">
+            <section id="main-content">
+
+                <!-- Simple Grid -->
+
+                <div class="anchor" id="simplegrid"></div>
+
+                <div class="section">
+                    <h2>Simple Grid</h2>
+                    <div class="sub-section no-border">
+                        <div id="simpleGrid" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extended Grid -->
+
+                <div class="anchor" id="extendeddgrid"></div>
+
+                <div class="section">
+                    <h2>Grid with Editors & Extensions</h2>
+                    <div class="sub-section no-border">
+                        <h3><span class="secondary">Extensions: ColumnHider, ColumnResizer, ColumnReorder, and Pagination</span></h3>
+                        <div id="extendedGrid" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="sub-section no-border">
+                        <button id="showRowsPerPageBtn" data-dojo-type="dijit/form/ToggleButton" data-dojo-props="iconClass:'dijitCheckBoxIcon'" class="btn-alt btn-primary">Show rows-per-page</button>
+                        <button id="setToStoreBtn" data-dojo-type="dijit/form/Button" class="btn-alt btn-primary">Set to sync store</button>
+                        <button id="setToEmptyStoreBtn" data-dojo-type="dijit/form/Button" class="btn-alt btn-primary">Set to sync empty store</button>
+                    </div>
+                </div>
+
+                <!-- Tree Grid -->
+
+                <div class="anchor" id="treegrid"></div>
+
+                <div class="section">
+                    <h2>Tree Grid</h2>
+                    <div class="sub-section no-border">
+                        <div id="treeGrid" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside id="sidebar" dir="ltr">
+                <ul>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="disableCheckbox" />
+                            Disable dijits</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="rtlCheckbox" />
+                            RTL mode</label>
+                    </li>
+                    <li>
+                        <h3>Jump to:</h3>
+                        <ul>
+                            <li><a href="#simplegrid">Simple Grid</a></li>
+                            <li><a href="#extendeddgrid">Grid with Editors & Extensions</a></li>
+                            <li><a href="#treegrid">Tree Grid</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        dojoConfig = {
+            async: true
+        };
+    </script>
+    <script src="//js.arcgis.com/3.12/"></script>
+    <script type="text/javascript">
+        require(["../javascripts/dgrid.js"]);
+    </script>
+</body>
+</html>

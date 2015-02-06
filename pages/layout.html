@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dojo/flat.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Flat Dojo Theme</title>
+</head>
+
+<body>
+    <header id="header" dir="ltr">
+        <div class="inner">
+            <h1><b>Flat</b> Dojo</h1>
+            <div class="buttons">
+                <a href="https://github.com/Esri/dojo-theme-flat/zipball/master" class="button download">Download
+                </a>
+                <br />
+                <a href="https://github.com/yiweima/dojoflat.github.io" class="">View project on GitHub</a>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="../">Form</a>
+            <a href="#" class="selected">Layouts</a>
+            <a href="others.html">Other Dijits</a>
+            <a href="dgrid.html">dGrid</a>
+            <a href="esri.html">Esri Widgets</a>
+        </nav>
+    </header>
+
+    <div id="content-wrapper" class="loading">
+        <div class="inner clearfix">
+            <section id="main-content">
+
+                <!-- dijit/layout/BorderContainer -->
+                
+                <div class="anchor" id="bordercontainer"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/layout/</span>BorderContainer</h2>
+                    <div class="sub-section no-border">
+
+                        <div id="borderContainer" data-dojo-type="dijit/layout/BorderContainer"
+                            data-dojo-props='style:"width: 100%; height: 400px;"'>
+                            <div role="banner" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='region:"top", style: "height: 50px;", splitter:true'>
+                                top bar (resizable)
+                            </div>
+                            <div role="navigation" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='region:"left", style:"width: 100px;",
+		splitter:true, minSize:150, maxSize:250'>
+                                left (resizable b/w 150 &rarr; 250)
+                            </div>
+                            <div role="main" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='region:"center"'>
+                                main panel
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='region:"right", style:"width: 100px;"'>
+                                right (fixed size)
+                            </div>
+                            <div role="contentinfo" data-dojo-type="dijit/layout/ContentPane" data-dojo-props='region:"bottom", style:"height: 50px;", splitter:true'>
+                                bottom bar (resizable)
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- dijit/layout/TabContainer -->
+
+                <div class="anchor" id="tabcontainer"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/form/</span>TabContainer</h2>
+
+                    <!-- dijit/layout/TabContainer: Top -->
+
+                    <div class="sub-section no-border">
+                        <h3><span class="secondary">tabPosition: </span>"top-h"</h3>
+                        <div data-dojo-type="dijit/layout/TabContainer" style="height: 200px; width: 100%" data-dojo-props='tabPosition: "top-h"'>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"w/ Nested Tabs"'>
+                                <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props='nested: true'>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 1"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dijit/layout/TabContainer: Left -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">tabPosition: </span>"left-h"</h3>
+                        <div data-dojo-type="dijit/layout/TabContainer" style="height: 200px; width: 100%" data-dojo-props='tabPosition: "left-h"'>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"w/ Nested Tabs"'>
+                                <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props='nested: true,tabPosition: "left"'>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 1"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dijit/layout/TabContainer: Right -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">tabPosition: </span>"right-h"</h3>
+                        <div data-dojo-type="dijit/layout/TabContainer" style="height: 200px; width: 100%" data-dojo-props='tabPosition: "right-h"'>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"w/ Nested Tabs"'>
+                                <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props='nested: true,tabPosition: "right"'>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 1"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dijit/layout/TabContainer: Bottom -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">tabPosition: </span>"bottom-h"</h3>
+                        <div data-dojo-type="dijit/layout/TabContainer" style="height: 200px; width: 100%" data-dojo-props='tabPosition: "bottom-h"'>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"w/ Nested Tabs"'>
+                                <div data-dojo-type="dijit/layout/TabContainer" data-dojo-props='nested: true,tabPosition: "bottom"'>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 1"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                                    </div>
+                                    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 2"'>
+                            </div>
+                            <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props='title:"Tab 3", closable: true'>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- dijit/layout/AccordionContainer -->
+
+                <div class="anchor" id="accordioncontainer"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/layout/</span>AccordionContainer</h2>
+                    <div class="sub-section no-border">
+
+                        <div style="width: 300px; height: 300px">
+                            <div data-dojo-type="dijit/layout/AccordionContainer" style="height: 300px;">
+                                <div data-dojo-type="dijit/layout/ContentPane" title="content pane 1">
+                                </div>
+                                <div data-dojo-type="dijit/layout/ContentPane" title="content pane 3" selected="true">
+                                </div>
+                                <div data-dojo-type="dijit/layout/ContentPane" title="content pane 3">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <aside id="sidebar" dir="ltr">
+                <ul>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="disableCheckbox" />
+                            Disable dijits</label><br />
+                        <label><span class="secondary">(only effective on "TabContainer")</span></label>
+                    </li>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="rtlCheckbox" />
+                            RTL mode</label>
+                    </li>
+                    <li>
+                        <h3>Jump to:</h3>
+                        <ul>
+                            <li><a href="#bordercontainer">dijit/layout/BorderContainer</a></li>
+                            <li><a href="#tabcontainer">dijit/layout/TabContainer</a></li>
+                            <li><a href="#accordioncontainer">dijit/layout/AccordionContainer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        dojoConfig = {
+            async: true
+        };
+    </script>
+    <script src="//js.arcgis.com/3.12/"></script>
+    <script type="text/javascript">
+        require(["../javascripts/layout.js"]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*
+    Additional styles for form page 
+*/
+
+.dijitSliderH {
+    margin: 30px;
+}
+
+.dijitSliderV {
+    float: left;
+    margin: 30px;
+}
+
+.dijitCheckBox, .dijitRadio {
+    margin: 10px;
+}

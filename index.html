@@ -1,78 +1,342 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="Stylesheet" type="text/css" href="stylesheets/theme/dojo/flat.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Flat Dojo Theme by yiweima</title>
-  </head>
+    <title>Flat Dojo Theme</title>
+</head>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Flat Dojo Theme</h1>
-        <h2>A flat Dojo theme.</h2>
-        <a href="https://github.com/yiweima/dojoflat.github.io" class="button"><small>View project on</small>GitHub</a>
-      </div>
+<body>
+    <header id="header" dir="ltr">
+        <div class="inner">
+            <h1><b>Flat</b> Dojo</h1>
+            <div class="buttons">
+                <a href="https://github.com/Esri/dojo-theme-flat/zipball/master" class="button download">Download
+                </a>
+                <br />
+                <a href="https://github.com/yiweima/dojoflat.github.io" class="">View project on GitHub</a>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#" class="selected">Form</a>
+            <a href="pages/layout.html">Layouts</a>
+            <a href="pages/others.html">Other Dijits</a>
+            <a href="pages/dgrid.html">dGrid</a>
+            <a href="pages/esri.html">Esri Widgets</a>
+        </nav>
     </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <div id="content-wrapper" class="loading">
+        <div class="inner clearfix">
+            <section id="main-content">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                <!-- Buttons -->
+                <div class="anchor" id="buttons"></div>
+                <div class="section">
+                    <h2>Buttons</h2>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+                    <!-- dijit/form/Button -->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                    <div class="sub-section no-border">
+                        <h3><span class="secondary">dijit/form/</span>Button</h3>
+                        <button data-dojo-type="dijit/form/Button" type="button">Button</button>
+                        <!--                        <button data-dojo-props="'class':'btn-alt btn-primary'" data-dojo-type="dijit/form/Button" type="button">Primary</button>
+                        <button data-dojo-props="'class':'btn-alt btn-success'" data-dojo-type="dijit/form/Button" type="button">Success</button>
+                        <button data-dojo-props="'class':'btn-alt btn-info'" data-dojo-type="dijit/form/Button" type="button">Info</button>
+                        <button data-dojo-props="'class':'btn-alt btn-warning'" data-dojo-type="dijit/form/Button" type="button">Warning</button>
+                        <button data-dojo-props="'class':'btn-alt btn-danger'" data-dojo-type="dijit/form/Button" type="button">Danger</button>
+                        <button data-dojo-props="'class':'btn-alt btn-inverse'" data-dojo-type="dijit/form/Button" type="button">Inverse</button>-->
+                    </div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+                    <!-- dijit/form/DropDownButton -->
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>DropDownButton</h3>
+                        <div data-dojo-type="dijit/form/DropDownButton">
+                            <span>DropDown Button</span>
+                            <div data-dojo-type="dijit/TooltipDialog">
+                                DropDown Content
+                            </div>
+                        </div>
+                    </div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+                    <!-- dijit/form/ComboButton -->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>ComboButton</h3>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+                        <div data-dojo-type="dijit/form/ComboButton">
+                            <span>get all mail</span>
+                            <div data-dojo-type="dijit/DropDownMenu">
+                                <div data-dojo-type="dijit/MenuItem">Yahoo</div>
+                                <div data-dojo-type="dijit/MenuItem">Google</div>
+                            </div>
+                        </div>
+                    </div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+                    <!-- dijit/form/ToggleButton -->
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>ToggleButton</h3>
+                        <button data-dojo-type="dijit/form/ToggleButton"
+                            data-dojo-props="iconClass:'dijitCheckBoxIcon', checked: true">
+                            Toggle Button
+                        </button>
+                        <button data-dojo-type="dijit/form/ToggleButton"
+                            data-dojo-props="iconClass:'dijitRadioIcon'">
+                            Toggle me
+                        </button>
+                    </div>
+                </div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+                <!-- dijit/form/CheckBox -->
+                <div class="anchor" id="checkboxes"></div>
+                <div class="section">
+                    <h2><span class="secondary">dijit/form/</span>CheckBox</h2>
+                    <div class="sub-section no-border">
+                        <input data-dojo-type="dijit/form/CheckBox" checked />
+                        <input data-dojo-type="dijit/form/CheckBox" />
+                    </div>
+                </div>
 
-        <aside id="sidebar">
-          <a href="https://github.com/Esri/dojo-theme-flat/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <p class="repo-owner"><a href="https://github.com/yiweima/dojoflat.github.io"></a> is maintained by <a href="https://github.com/yiweima">yiweima</a>.</p>
+                <!-- dijit/form/RadioButton -->
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+                <div class="anchor" id="radiobuttons"></div>
+                <div class="section">
+                    <h2><span class="secondary">dijit/form/</span>RadioButton</h2>
+                    <div class="sub-section no-border">
+                        <input data-dojo-type="dijit/form/RadioButton" checked />
+                        <input data-dojo-type="dijit/form/RadioButton" />
+                    </div>
+                </div>
+
+                <!-- dijit/form/Select -->
+
+                <div class="anchor" id="selects"></div>
+                
+                <div class="section">
+                    <h2>Select / MultiSelect</h2>
+                    <div class="sub-section no-border">
+                        <h3><span class="secondary">dijit/form/</span>Select</h3>
+                        <select data-dojo-type="dijit/form/Select" required>
+                            <option>-- select -- </option>
+                            <option value="TN">Tennessee</option>
+                            <option value="VA" selected="selected">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option></option>
+                            <option value="FL">Florida</option>
+                            <option value="CA">California</option>
+                        </select>
+                    </div>
+
+                    <!-- dijit/form/MultiSelect -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>MultiSelect</h3>
+                        <select data-dojo-type="dijit/form/MultiSelect" size="4">
+                            <option value="AP" selected="selected">Apples</option>
+                            <option value="OR">Oranges</option>
+                            <option value="PE" selected="selected">Pears</option>
+                        </select>
+                    </div>
+
+                    <!-- dijit/form/ComboBox -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>ComboBox</h3>
+                        <select data-dojo-type="dijit/form/ComboBox">
+                            <option>Apples</option>
+                            <option selected>Oranges</option>
+                            <option>Pears</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Textboxes / Textarea -->
+                
+                <div class="anchor" id="textboxes"></div>
+
+                <div class="section">
+                    <h2>Textboxes / Textarea</h2>
+
+                    <!-- dijit/form/TextBox -->
+
+                    <div class="sub-section no-border">
+                        <h3><span class="secondary">dijit/form/</span>TextBox</h3>
+                        <input type="text" data-dojo-type="dijit/form/TextBox" data-dojo-props="placeHolder:'placeholder...'" />
+                    </div>
+
+                    <!-- dijit/form/ValidationTextBox -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>ValidationTextBox</h3>
+                        <input type="text" name="zip" required="true"
+                            data-dojo-type="dijit/form/ValidationTextBox"
+                            data-dojo-props="regExp:'\\d{5}', invalidMessage:'Invalid zip code.', placeholder:'enter your zip code'" />
+                    </div>
+
+                    <!-- dijit/form/NumberTextBox -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>NumberTextBox</h3>
+                        <input type="text"
+                            data-dojo-type="dijit/form/NumberTextBox"
+                            name="elevation"
+                            required="true"
+                            value="3000"
+                            data-dojo-props="constraints:{min:-20000,max:20000,places:0}, invalidMessage:'Invalid elevation.'" />
+                    </div>
+
+                    <!-- dijit/form/NumberSpinner -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>NumberSpinner</h3>
+                        <div id="numberSpinner"></div>
+                    </div>
+
+                    <!-- dijit/form/CurrencyTextBox -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>CurrencyTextBox</h3>
+                        <input type="text" value="54775.53" required="true"
+                            data-dojo-type="dijit/form/CurrencyTextBox"
+                            data-dojo-props="constraints:{fractional:true},currency:'USD',invalidMessage:'Invalid amount. Cents are required.'" />
+                    </div>
+
+                    <!-- dijit/form/TimeTextBox -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>TimeTextBox</h3>
+                        <input type="text"
+                            data-dojo-type="dijit/form/TimeTextBox"
+                            data-dojo-props="value: 'T15:00:00', required:true" />
+                    </div>
+
+                    <!-- dijit/form/DateTextBox -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>DateTextBox</h3>
+                        <input data-dojo-type="dijit/form/DateTextBox" data-dojo-props='value:"2012-12-31"' />
+                    </div>
+
+                    <!-- dijit/form/Textarea -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>Textarea, 
+                            <span class="secondary">dijit/form/</span>SimpleTextarea</h3>
+                        <textarea data-dojo-type="dijit/form/Textarea"
+                            rows="4"
+                            cols="30"
+                            style="width: auto; resize: vertical">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+						</textarea>
+                    </div>
+                </div>
+
+                <!-- Sliders -->
+
+                <div class="anchor" id="sliders"></div>
+
+                <div class="section clearfix">
+                    <h2>Sliders</h2>
+
+                    <!-- dijit/form/HorizontalSlider -->
+
+                    <div class="sub-section no-border">
+                        <h3><span class="secondary">dijit/form/</span>HorizontalSlider</h3>
+                        <div id="horizontalSlider"></div>
+                        <div id="horizontalSliderAdvanced"></div>
+                    </div>
+
+                    <!-- dijit/form/VerticalSlider -->
+
+                    <div class="sub-section">
+                        <h3><span class="secondary">dijit/form/</span>VerticalSlider</h3>
+                        <div id="verticalSlider"></div>
+                        <div id="verticalSliderAdvanced"></div>
+                    </div>
+                </div>
+
+            </section>
+            <aside id="sidebar" dir="ltr">
+                <ul>
+                    <li>
+                        <h3>Change background color for all button nodes:</h3>
+                        <div id="bgButtons">
+                            <button data-dojo-type="dijit/form/Button" type="button"
+                                data-dojo-props="colorType: 'default'">
+                                Default</button>
+                            <button data-dojo-props="'class':'btn-alt btn-primary', 'colorType': 'blue'"
+                                data-dojo-type="dijit/form/Button" type="button">
+                                blue</button>
+                            <button data-dojo-props="'class':'btn-alt btn-success', colorType: 'green'"
+                                data-dojo-type="dijit/form/Button" type="button">
+                                green</button>
+                            <button data-dojo-props="'class':'btn-alt btn-info', colorType: 'light-blue'"
+                                data-dojo-type="dijit/form/Button" type="button">
+                                light blue</button>
+                            <button data-dojo-props="'class':'btn-alt btn-warning', colorType: 'yellow'"
+                                data-dojo-type="dijit/form/Button" type="button">
+                                yellow</button>
+                            <button data-dojo-props="'class':'btn-alt btn-danger', colorType: 'red'"
+                                data-dojo-type="dijit/form/Button" type="button">
+                                red</button>
+                            <button data-dojo-props="'class':'btn-alt btn-inverse', colorType: 'dark'"
+                                data-dojo-type="dijit/form/Button" type="button">
+                                dark</button>
+                        </div>
+                    </li>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="disableCheckbox" />
+                            Disable all dijits</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="rtlCheckbox" />
+                            RTL mode</label>
+                    </li>
+                    <li>
+                        <h3>Jump to:</h3>
+                        <ul>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#checkboxes">dijit/form/CheckBox</a></li>
+                            <li><a href="#radiobuttons">dijit/form/RadioButton</a></li>
+                            <li><a href="#selects">Select / MultiSelect</a></li>
+                            <li><a href="#textboxes">Textboxes / Textarea</a></li>
+                            <li><a href="#sliders">Sliders</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
     </div>
 
-  
-  </body>
+    <script type="text/javascript">
+        dojoConfig = {
+            async: true,
+            packages: [
+			{
+			    name: "js",
+			    location: location.pathname.replace(/\/[^/]+$/, "") + "/javascripts"
+			}
+            ]
+        };
+    </script>
+    <script src="//js.arcgis.com/3.12/"></script>
+    <script type="text/javascript">
+        require(["js/form"]);
+    </script>
+</body>
 </html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="Stylesheet" type="text/css" href="../stylesheets/theme/dojo/flat.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Flat Dojo Theme</title>
+</head>
+
+<body>
+    <header id="header" dir="ltr">
+        <div class="inner">
+            <h1><b>Flat</b> Dojo</h1>
+            <div class="buttons">
+                <a href="https://github.com/Esri/dojo-theme-flat/zipball/master" class="button download">Download
+                </a>
+                <br />
+                <a href="https://github.com/yiweima/dojoflat.github.io" class="">View project on GitHub</a>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="../">Form</a>
+            <a href="layout.html">Layouts</a>
+            <a href="#" class="selected">Other Dijits</a>
+            <a href="dgrid.html">dGrid</a>
+            <a href="esri.html">Esri Widgets</a>
+        </nav>
+    </header>
+
+    <div id="content-wrapper" class="loading">
+        <div class="inner clearfix">
+            <section id="main-content">
+
+                <!-- dijit/MenuBar -->
+
+                <div class="anchor" id="menubar"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>MenuBar</h2>
+                    <div class="sub-section no-border">
+
+                        <div id="menuBar"></div>
+
+                    </div>
+                </div>
+
+                <!-- dijit/ProgressBar -->
+
+                <div class="anchor" id="progressbars"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>ProgressBar</h2>
+                    <div class="sub-section no-border">
+                        <h3>Determinate (default)</h3>
+                        <div data-dojo-type="dijit/ProgressBar" style="width: 300px" data-dojo-props="progress:'70'"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-success" style="width: 300px" data-dojo-props="progress:'45'"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-info" style="width: 300px" data-dojo-props="progress:'80'"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-warning" style="width: 300px" data-dojo-props="progress:'25'"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-danger" style="width: 300px" data-dojo-props="progress:'32'"></div>
+                        <br />
+                    </div>
+
+                    <div class="sub-section">
+                        <h3>Indeterminate</h3>
+                        <div data-dojo-type="dijit/ProgressBar" style="width: 300px" data-dojo-props="indeterminate: true"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-success" style="width: 300px" data-dojo-props="indeterminate: true"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-info" style="width: 300px" data-dojo-props="indeterminate: true"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-warning" style="width: 300px" data-dojo-props="indeterminate: true"></div>
+                        <br />
+                        <div data-dojo-type="dijit/ProgressBar" class="progress-bar-danger" style="width: 300px" data-dojo-props="indeterminate: true"></div>
+                        <br />
+                    </div>
+                </div>
+
+                <!-- dijit/Dialog -->
+
+                <div class="anchor" id="dialog"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>Dialog</h2>
+                    <div class="sub-section no-border">
+                        <button data-dojo-type="dijit/form/Button" onclick="theDialog.show();">Open Dojo Dialog</button>
+                        <div data-dojo-type="dijit/Dialog" data-dojo-id="theDialog" title="Dialog" style="width: 500px">
+                            <div class="dijitDialogPaneContentArea">
+                                <br />
+                                Content Area
+                                <br />
+                                <br />
+                            </div>
+                            <div class="dijitDialogPaneActionBar">
+                                <button data-dojo-type="dijit/form/Button" type="submit" id="ok" data-dojo-props="class:'btn-alt btn-success'">OK</button>
+                                <button data-dojo-type="dijit/form/Button" type="button" data-dojo-props="onClick:function(){theDialog.hide();}">
+                                    Cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dijit/TooltipDialog -->
+
+                <div class="anchor" id="tooltipdialog"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>TooltipDialog </h2>
+                    <div class="sub-section no-border">
+                        <div data-dojo-type="dijit/form/DropDownButton" id="tooltipdialogButton1" data-dojo-props="dropDownPosition: ['below-centered']">
+                            <span>below centered</span>
+                        </div>
+                        <div data-dojo-type="dijit/form/DropDownButton" id="tooltipdialogButton2" data-dojo-props="dropDownPosition: ['above-centered']">
+                            <span>above-centered</span>
+                        </div>
+                        <div data-dojo-type="dijit/form/DropDownButton" id="tooltipdialogButton3" data-dojo-props="dropDownPosition: ['before-centered']">
+                            <span>before-centered</span>
+                        </div>
+                        <div data-dojo-type="dijit/form/DropDownButton" id="tooltipdialogButton4" data-dojo-props="dropDownPosition: ['after-centered']">
+                            <span>after centered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dijit/Tooltip -->
+
+                <div class="anchor" id="tooltip"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>Tooltip</h2>
+                    <div class="sub-section no-border">
+                        <span id="tooltipAbove">above | </span>
+                        <span id="tooltipAboveCentered">above centered | </span>
+                        <span id="tooltipBelow">below | </span>
+                        <span id="tooltipBelowCentered">below centered | </span>
+                        <span id="tooltipBefore">before | </span>
+                        <span id="tooltipAfter">after </span>
+                    </div>
+                </div>
+
+                <!-- dijit/ColorPalette -->
+
+                <div class="anchor" id="colorpalette"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>ColorPalette </h2>
+                    <div class="sub-section no-border">
+                        <div data-dojo-type="dijit/ColorPalette"></div>
+                    </div>
+                </div>
+
+                <!-- dijit/TitlePane -->
+
+                <div class="anchor" id="titlepane"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>TitlePane</h2>
+                    <div class="sub-section no-border">
+                        <div data-dojo-type="dijit/TitlePane" data-dojo-props='title:"Title Pane", style:"width: 300px;"'>
+                            <p>
+                                Lorem Ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque iaculis, nulla id semper faucibus, pede tellus nonummy magna, vitae adipiscing orci arcu ut augue. Nunc condimentum, magna a vestibulum convallis, libero purus pulvinar orci, sed vestibulum urna sem ut pede. More Ipsum... Sed sollicitudin suscipit risus. Nam ullamcorper. Sed nisl lectus, pellentesque nec, malesuada eget, ornare a, libero. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dijit/Tree -->
+
+                <div class="anchor" id="tree"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>Tree </h2>
+                    <div class="sub-section no-border">
+                        <div id="treeNode"></div>
+                    </div>
+                </div>
+
+                <!-- dijit/Editor -->
+
+                <div class="anchor" id="editor"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>Editor</h2>
+                    <div class="sub-section no-border">
+                        <div id="editorNode">
+                            <p>This instance is created from a div directly with default toolbar and plugins</p>
+                            The following HTML should appear as source: &lt;INPUT TYPE="IMAGE" SRC="javascript:alert('no scripting attacks')"&gt;
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dijit/InlineEditBox -->
+
+                <div class="anchor" id="inlineeditbox"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>InlineEditBox</h2>
+                    <div class="sub-section no-border">
+                        <div id="InlineEditBoxNode">
+                            2000
+                        </div>
+                        <span class="secondary">(Click number to edit)</span>
+                    </div>
+                </div>
+
+                <!-- dijit/dnd -->
+
+                <div class="anchor" id="dnd"></div>
+
+                <div class="section">
+                    <h2><span class="secondary">dijit/</span>dnd</h2>
+                    <div class="sub-section no-border">
+                        <ol id="DnDList">
+                        </ol>
+                    </div>
+                </div>
+
+            </section>
+
+            <aside id="sidebar" dir="ltr">
+                <ul>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="disableCheckbox" />
+                            Disable dijits</label>
+                    </li>
+                    <li>
+                        <label>
+                            <input data-dojo-type="dijit/form/CheckBox" id="rtlCheckbox" />
+                            RTL mode</label>
+                    </li>
+                    <li>
+                        <h3>Jump to:</h3>
+                        <ul>
+                            <li><a href="#menubar">dijit/MenuBar</a></li>
+                            <li><a href="#progressbars">dijit/ProgressBar</a></li>
+                            <li><a href="#dialog">dijit/Dialog</a></li>
+                            <li><a href="#tooltipdialog">dijit/TooltipDialog</a></li>
+                            <li><a href="#colorpalette">dijit/ColorPalette</a></li>
+                            <li><a href="#titlepane">dijit/TitlePane</a></li>
+                            <li><a href="#tree">dijit/Tree</a></li>
+                            <li><a href="#editor">dijit/Editor</a></li>
+                            <li><a href="#inlineeditbox">dijit/InlineEditBox</a></li>
+                            <li><a href="#dnd">dijit/dnd</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        dojoConfig = {
+            async: true
+        };
+    </script>
+    <script src="//js.arcgis.com/3.12/"></script>
+    <script type="text/javascript">
+        require(["../javascripts/others.js"]);
+    </script>
+</body>
+</html>
