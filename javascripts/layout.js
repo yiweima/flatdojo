@@ -17,8 +17,8 @@ function (parser, on, array, query, ioQuery, domClass, registry) {
     var _direction = "ltr";
 
     var uri = location.href;
-    var query = uri.substring(uri.indexOf("?") + 1, uri.length);
-    var queryObject = ioQuery.queryToObject(query);
+    var queryString = uri.substring(uri.indexOf("?") + 1, uri.length);
+    var queryObject = ioQuery.queryToObject(queryString);
 
     if (queryObject.dir && queryObject.dir === "rtl") {
         document.body.dir = "rtl";
